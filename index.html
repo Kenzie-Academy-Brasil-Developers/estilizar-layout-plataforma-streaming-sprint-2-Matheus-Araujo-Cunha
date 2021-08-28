@@ -8,6 +8,9 @@
 	<!-- TÍTULO -->
 	<title>Kenzieflix</title>
 
+	<!--RESET CSS-->
+	<link rel="stylesheet" href="css/reset.css">
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -17,69 +20,79 @@
 <body>
 	
 	<!-- CABEÇALHO -->
-	<header class="topo">
-		<figure>
-			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
+	<header class="top">
+		<figure class="top__figure">
+			<img class="top__image" src="img/logo.png" alt="Kenzieflix">
+			<!-- <figcaption>Kenzieflix</figcaption> -->
 		</figure>
 	</header>
 
 	<!-- PÁGINA INICIAL -->
 	<div class="pg-home">
 		
-		<section>
+		<section class="profile">
 
-			<header>
-				<h2>Quem está assistindo?</h2>
+			<header class="profile__header">
+				<h2 class="profile__text">Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="profile__list">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
-						<figcaption>Gabriel</figcaption>
+				
+			
+
+				<li  class="profile__item">
+					<figure class="profile__figure">
+						<img class="profile__image" src="img/avatar.png" alt="Gabriel">
+						<figcaption class="profile__figcaption">Gabriel</figcaption>
 					</figure>
 
-					<h3>Gabriel</h3>
+					<h3 class="profile__h">Gabriel</h3>
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
-					<figure>
-						<img src="img/avatar1.png" alt="Maria">
-						<figcaption>Maria</figcaption>
+				<li class="profile__item">
+					<figure class="profile__figure">
+						<img class="profile__image" src="img/avatar1.png" alt="Maria">
+						<figcaption class="profile__figcaption">Maria</figcaption>
 					</figure>
 
-					<h3>Maria</h3>
+					<h3 class="profile__h">Maria</h3>
 				</li>
 				
+			  
+
 				<!-- USUÁRIO 3 -->
-				<li>
-					<figure>
-						<img src="img/avatar2.png" alt="Renato">
-						<figcaption>Renato</figcaption>
+				
+				
+				
+				<li class="profile__item">
+					<figure class="profile__figure">
+						<img class="profile__image" src="img/avatar2.png" alt="Renato">
+						<figcaption class="profile__figcaption">Renato</figcaption>
 					</figure>
 
-					<h3>Renato</h3>
+					<h3 class="profile__h">Renato</h3>
 				</li>
 
 				<!-- ADICIONAR PERFIL-->
-				<li class="addPerfil">
-					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
-						<figcaption>Adicionar perfil</figcaption>
+				<li class="profile__item profile__item--none">
+					<figure class="profile__figure profile__figure--none">
+						<img  class="profile__image profile__image--none" src="img/plus-sign.png" alt="Adicionar perfil">
+						<figcaption class="profile__figcaption profile__figcaption--none">Adicionar Perfil</figcaption>
 					</figure>
 
-					<h3>Adicionar perfil</h3>
+					<h3 class="profile__h">Adicionar perfil</h3>
 				</li>
+
+				
 
 			</ul>
 
-			<footer>
-				<button>Gerenciar Perfis</button>
+			<footer class="footer">
+				<button class="footer__button">Gerenciar Perfis</button>
 			</footer>
 
 		</section>
